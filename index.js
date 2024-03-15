@@ -69,14 +69,13 @@ async function run() {
     });
   
   } finally {
-    // Ensures that the client will close when you finish/error
-    // await client.close();
+
   }
 }
 run().catch(console.dir);
 
 app.get("/", (req, res) => {
-  res.send("Hello From Fighting Spirit server!");
+  res.send("Hello From user bitechx server!");
 });
 
 app.listen(port, () => {
